@@ -1,0 +1,88 @@
+﻿<Window x:Class="WPFTrek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTrek"
+        mc:Ignorable="d"
+        Title="WPF Trek" Height="690" Width="810">
+    <Grid>
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="2" Margin="0,21,0,0">
+            <Grid x:Name="srsPanel" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="396" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                    <ColumnDefinition Width="36"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Border>
+        <Grid x:Name="controlPanel" HorizontalAlignment="Right" Height="311" VerticalAlignment="Top" Width="392">
+            <Button x:Uid="Impulse"  x:Name="btnImpulse" Content="IMPL" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" AutomationProperties.HelpText="Move ship using impulse engines" Height="20"/>
+            <Button x:Uid="Warp" x:Name="btnWarp" Content="WARP" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" AutomationProperties.HelpText="Move ship using warp engines"/>
+            <Button x:Uid="Phasers" x:Name="btnPhasers" Content="PHAS" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" AutomationProperties.HelpText="Fire phasers on all enemy vessels "/>
+            <Button x:Uid="Torpedos" x:Name="btnTorpedoes" Content="TORP" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" AutomationProperties.HelpText="Fire a torpedo along a defined course"/>
+            <Button x:Uid="Sheilds" x:Name="btnShields" Content="SHLD" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" AutomationProperties.HelpText="Raise and lower shields"/>
+            <Button x:Uid="Divert" x:Name="btnDivert" Content="Power" HorizontalAlignment="Left" Margin="112,95,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" AutomationProperties.HelpText="Divert main power to shields"/>
+            <Button x:Uid="LRS" x:Name="btnLRS" Content="LRS" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" RenderTransformOrigin="0.513,-1.083"/>
+            <Button x:Uid="Repairs" x:Name="btnRepairs" Content="DMG" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="50" Click ="ButtonControl" ClickMode="Release" AutomationProperties.HelpText="Direct damage control crews to repair the ship"/>
+            <Label Content="100%" x:Name="lblImpulse" HorizontalAlignment="Left" Margin="61,0,0,0" VerticalAlignment="Top"/>
+            <Label Content="100%" x:Name="lblWarp" HorizontalAlignment="Left" Margin="61,23,0,0" VerticalAlignment="Top"/>
+            <Label Content="100%" x:Name="lblPhasers" HorizontalAlignment="Left" Margin="61,46,0,0" VerticalAlignment="Top"/>
+            <Label Content="100%" x:Name="lblTorpedoes" HorizontalAlignment="Left" Margin="61,69,0,0" VerticalAlignment="Top"/>
+            <Label Content="8 Remaining" x:Name="lblTorpedoCount" HorizontalAlignment="Left" Margin="106,69,0,0" VerticalAlignment="Top"/>
+            <Label Content="100%" x:Name="lblShields" HorizontalAlignment="Left" Margin="61,92,0,0" VerticalAlignment="Top"/>
+            <Label Content="100%" x:Name="lblLRS" HorizontalAlignment="Left" Margin="61,115,0,0" VerticalAlignment="Top"/>
+            <Label Content="100%" x:Name="lblRepairs" HorizontalAlignment="Left" Margin="61,138,0,0" VerticalAlignment="Top"/>
+            <Label Content="Stardate:" HorizontalAlignment="Left" Margin="215,1,0,0" VerticalAlignment="Top"/>
+            <Label Content="Alert Level:" HorizontalAlignment="Left" Margin="215,18,0,0" VerticalAlignment="Top"/>
+            <Label Content="Energy:" HorizontalAlignment="Left" Margin="215,35,0,0" VerticalAlignment="Top"/>
+            <Label Content="Quadrant:" HorizontalAlignment="Left" Margin="215,52,0,0" VerticalAlignment="Top"/>
+            <Label Content="Sector:" HorizontalAlignment="Left" Margin="215,69,0,0" VerticalAlignment="Top"/>
+            <Label Content="Klingons:" HorizontalAlignment="Left" Margin="215,135,0,0" VerticalAlignment="Top"/>
+            <Label Content="3241" x:Name="lblStarDate" HorizontalAlignment="Left" Margin="302,1,0,0" VerticalAlignment="Top"/>
+            <Label Content="Green" x:Name="lblAlert" HorizontalAlignment="Left" Margin="302,18,0,0" VerticalAlignment="Top"/>
+            <Label Content="100" x:Name="lblEnergy" HorizontalAlignment="Left" Margin="302,35,0,0" VerticalAlignment="Top"/>
+            <Label Content="?" x:Name="lblQuadrant" HorizontalAlignment="Left" Margin="302,52,0,0" VerticalAlignment="Top"/>
+            <Label Content="?" x:Name="lblSector" HorizontalAlignment="Left" Margin="302,69,0,0" VerticalAlignment="Top"/>
+            <Label Content="0" x:Name="lblKlingons" HorizontalAlignment="Left" Margin="302,135,0,0" VerticalAlignment="Top"/>
+            <Label Content="100%" x:Name="lblShieldPowerRemaining" HorizontalAlignment="Left" Margin="162,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.233,-0.404"/>
+            <TextBox x:Name="txtComs" HorizontalAlignment="Left" Margin="10,166,0,10" TextWrapping="Wrap" Text="Welcome Captain!&#xD;&#xA;Shall we smoke a few Klingons?" Width="372" VerticalScrollBarVisibility="Visible"/>
+        </Grid>
+        <Grid x:Name="mapPanel" HorizontalAlignment="Left" Height="342" Margin="0,316,0,0" VerticalAlignment="Top" Width="802"/>
+        <Menu HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="400">
+            <MenuItem Header="_Game">
+                <MenuItem x:Name="mTCalc" Header="Targeting Calculator" Click="MenuItem_Click"/>
+                <MenuItem x:Name="mNCalc" Header="Warp Calculator" Click="MenuItem_Click"/>
+                <MenuItem x:Name="mLaunch" Header="Launch Probe" Click="MenuItem_Click"/>
+                <MenuItem x:Name="mNew" Header="New Game" Click="MenuItem_Click"/>
+                <MenuItem x:Name="mQuit" Header="Quit" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem x:Name="mInstructions" Header="Instructions" Click="MenuItem_Click"/>
+                <MenuItem x:Name="mAbout" Header="About" Click="MenuItem_Click"/>
+                <MenuItem x:Name="mCredits" Header="Credits" Click="MenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

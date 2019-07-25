@@ -1,0 +1,192 @@
+<html><H1>Super Duper Star Trek</H1>
+<H2>Introduction</H2>
+Gene Hilpert and I used to play Star Trek at UW Stevens Point and occassionally tinker with 
+the code.  Back then, computers did not have seemingly unlimited amounts of resources.  The 
+limited resources of mainframes were, to say the least, mind boggling small compared to the 
+smallest of devices on the market today, and the small code base of the game accounted for 
+that reality.<br>
+<br>
+Later, as computers became cheaper and more powerful, people began to expand upon the game 
+and new versions began to appear.  Some had Romulans along with Klingons, some had multiple 
+classes of enemy ships, some played differently.<br>
+<br>
+This version, (tongue-in-cheek) Super Duper Star Trek, takes the basic layout of the game 
+and adds a more modern interface, and attempts at a bit more TV-style realism.  On TV, no 
+matter how far they had to travel, no matter what events took place, it was done in about
+41 minutes.  For those hard-core Trekkers, you'll probably scream at some of my decision 
+over Impulse vs Warp travel, and groan over some of the impure ideas for the sake of game 
+play.  I make no apologies, and for the rest, this is just a way for me to get further into 
+my Java training and test out some ideas.<br>
+<br>
+If you're into action games, this might not be something of interest, but if you've played 
+the oringal version, you might find it an enjoyable trip down memory lane with a newer interface.<br>
+<br>
+Jon Walker<br>
+<br>
+<br>
+<H2>Mission Brief</H2>
+<br>
+It is stardate 3421.<br>
+<br>
+The Federation has been attacked by a large Klingon force and it is up to you, as commander 
+of the USS Enterprise, to stop them.  Federation Intelligence has determined the number of klingons
+and how much time we have to stop them.  Failing that, the Klingon empire will sense weakness and send 
+in everything they have.
+
+<H2>Your Ship</H2>
+Your starship is controlled with a single screen display.<br>
+<br>
+<img src="cpanel.jpg"><br>
+<br>
+<br>
+The map in the upper left is your short range sensors and will give you a view of the sector showing asteroids (*), Klingons (&gt;K&lt;), 
+Starbases (&lt;S&gt;), and your current position (&lt;E&gt;).
+<img src="srs.jpg"><br>
+<br>
+<br>
+The map in the lower part of the screen is the map of Federation territory.<br>
+<img src="lrs.jpg"><br>
+The grids with --- need to be investigated, while the grids 
+with numbers show you what to expect.  If you see a number, such as 135, then you will know that there is one starbase, three Klingons, 
+and five asteroids.  Long range sensors will fill in the map of Federation territory as you move through the sectors.  The long range 
+sensors will only allow you to map the grid you are in and all adjacent maps.  Occassionally, a starbase will check in and give you an 
+update to a sector that has been scanned in advance of your arrival.<br>
+<br>
+<br>
+<br>
+The upper right of your panel contains the controls and status display of the ship.<br>
+<img src="cands.jpg"><br>
+In this part of the control panel, you will find status of the ship's controls along with how many Klingons remain and the amount of
+time that remains.  Each turn you take consumes a certain amount of time, depending on what it is.  Movement takes up the most time, but
+launching photons and using phasers take up a small amount of time also.
+<br>
+<br>
+On the left side of this panel are the control buttons that will allow you to work with that device, such as pressing the SHLD button to 
+raise and lower the shields.  The buttons are as follows:<br>
+<br>
+<b>WARP</b> - Move quickly from sector to sector or across large parts of federation territory by warping to a location.<br>
+<br>
+<b>IMPL</b> - Impulse engines will allow you to move through the sector or into one of the adjacent sectors.  Impulse travel is slower than warp drive.<br>
+<br>
+<b>PHAS</b> - Brings up the Phaser control panel to input the amount of power to the phasers.  Phasers drain the main energy stores at a rate of 1 pt 
+of ship energy for every 10 pts of phaser power.  Phaser fire is divided amongst all enemy in the sector and is affected by distance.<br>
+<br>
+<b>TORP</b> - Brings up the photon torpedo control to set a course to fire a torpedo.  A single torpedo will usually destroy an enemy, but not always.<br>
+<br>
+<b>SHLD</b> - Raises and lowers the shields.  Sheilds use main energy stores, but they will not build back up quickly, so be careful because as the 
+sheild power lowers, more damage will be done to the ship.<br>
+<br>
+<b>LRS</b> - This status indicator shows you if the long range sensors are working.<br>
+<br>
+<b>DMG</b> - Brings up the damage control command screen.  You will be told how much time will be needed to effect full repairs and you can decide how much 
+time you can afford.  Docking with a starbase cuts the time needed in half.<br>
+<br>
+<br>
+In the same part of the screen are some import status readouts to which you need to pay attention.<br>
+<img src="cands2.jpg"><br>
+<br>
+The number oulined in read shows how much time (stardate) you have.  If that number reaches zero then the Klingon Empire will send in
+every ship they have and overrun the Federation.<br>
+<br>
+The number outlined in pink indicates the ships main energy level.  If it drops to zero then you are stranded and the game ends.<br>
+<br>
+The number outlined in green is the number of Klingon ships left in the game.  When that reaches zero, you are declared the winner of the game.<br>
+<br>
+<br>
+<H2>Navigation</H2>
+Movement control is accomplished by the use of a compass that has 8 positions and looks like the following:
+<br>
+&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2<br>
+&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;/<br>
+7&nbsp;---+---&nbsp;3<br>
+&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;\<br>
+&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;4<br><br>
+<br>
+Course values go from 1.0 to 8.9 as shown above. Each whole number represents 45 degrees on a normal compass's.  So a course of 2.5 would indicate a course
+of 67.5 degrees to the right of straight up on the screen.  Because of the small size of the grid, course settings do not need to be any more precise than
+one digit afer the decimal point.  Please note that the y-axis points downwards.  Also note that each row is one character high and 
+each column is three characters.  The periods denoting empty places on the SRS grid will help you visually.<br>
+<br>
+<br>
+<H2>Warp Travel</H2>
+Traveling through the galaxy is best done by using the warp drives.  Traveling from one sector to another takes 0.1 stardate and helps regenerate the ships 
+energy stores at a rate of 5 pts per sector.<br>
+<br>
+<br>
+<H2>Impulse Travel</H2>
+Impulse travel is used to get you around in the sector and uses 0.1 stardays per grid move in the sector.  Thus, moving straight across the sector will 
+consume a full stardate.  Navigation is accomplished using the same course setting as the warp drive and you are asked how far to travel before the move 
+is made.  Energy stores regenerate when using impulse at a rate of one point per grid move.  Thus moving 5 places on the sector board consumes half a 
+stardate, but raises energy levels by 5 points.<br>
+<br>
+<br>
+<H2>Star Bases</H2>
+A star base is critical to the game as it will provide you with full energy and torpedo count.  Additionally repairs made at a starbase take about half the 
+time as repairs made in space. You need to protect the star bases from the enemy as they will be able to destroy it if given enough time.<br>
+<br>
+<br>
+<H2>Klingons</H2>
+The enemy has invaded Federation territory and it's your job to mop them up.  These are light cruiser class warbirds and thus only carry beam weapons.  One 
+Klingon will not do a lot of damage unless they get lucky, but packs of them can be devastating.  Just remember, if you leave a sector with Klingons to repair 
+the ship, you give them time to effect repairs also.<br>
+<br>
+<br>
+<H2>Battle</H2>
+The whole point to the game is to destroy the Klingon invasion force.  Once that is accomplished, you are congratulated and the game ends.  During
+battle there are a few things to which you will need to pay attention.<br>
+<br>
+* The ships shields protect everything else onboard, but they are not perfect.  At full power, they only absorbe about 98% of the damage inflicted 
+on the ship and that protection lowers as the health of the shields lowers.<br>
+<br>
+* Health status of all ship functions are indicated by the percentage next to their button along with the color of the button.  When the health levels 
+reach 40%, the buttons will turn yellow, and when they reach 20%, they will turn red.  If the health status reaches zero then that device is destroyed 
+and will take extra time to repair.<br>
+<br>
+* When an object on the sector grid is destroyed, it is removed from the game board.  Moving out of the sector and coming back in gives the Klingon crews 
+time to repair their damage, so it's best if you can destroy them all before moving on.<br>
+<br>
+<br>
+<H2>Taking Damage</H2>
+While the sheilds are near full strength, the shields of the Enterprise will absorb most damage inflicted by the enemy.  However, as the health levels
+diminish, more of the damage will be transmitted to the various parts of the ship.<br>
+<br>
+<br>
+<H2>Damage Control</H2>
+The damage control button (DMG) allows you to effect repairs on the entire ship.  Priority is given to shields, warp, and phasers.  You will be given a time to full 
+repair and you then select how much time to spend on repairs.  If you put in a smaller number than gien, then the ship's health will improve accordingly.  If the 
+device has a health of zero, it's destroyed and requires you to press the button to bring up the DC repair estimate.<br>
+<br>
+When Klingons are in the sector, damage control personnel are too busy to accept new requests.<br>
+<br>
+<br>
+When docked at a starbase, repairs take about half as much time, so it could be well worth your while to fly across the quadrant to dock to the starbase.<br>
+<br>
+<br>
+<H2>End of Mission</H2>
+The mission ends when you destroy all of the Klingons, run out of energy, run out of time, or you lose the ability to fight in the presence of the enemy. 
+That is defined as warp, impulse, torpedos, and phasers are no longer operational while Klingons are in the sector.<br>
+<br>
+<br>
+<H2>Game Menu</H2>
+The game menu has four options:<br>
+<img src="menu.jpg">
+<br>
+<b>Instructions</b> - brings up this display.<br>
+<br>
+<b>Targeting Calculator</b> - brings up a dialog to enter the coordinates of your target grid location (row,col format like 5,3 for row 5 column 3).  It will return 
+the course and distance to that location.  You can use it for calculating a course for travel or torpedo firing solutions or moving on impulse power.<br>
+<br>
+<b>Warp Calculator</b> - brings up a dialog to enter the coordinates of your target sector (row,col format like 5,3 for row 5 column 3) and it will return 
+the course to that location along with distance.  You can use it for calculating a course for travel or torpedo firing solutions.<br>
+<br>
+<b>Exit</b> - Immediately exit the game.
+<br>
+<br>
+<br>
+<br>
+<hr>
+<H3>References</H3>
+<a href="https://en.wikipedia.org/wiki/Star_Trek_%281971_video_game%29">Wikipedia</a><br>
+<a href="http://www.bobsoremweb.com/startrek.html">Bob's Game Page - Star Trek</a><br>
+<a href="http://almy.us/sst.html">Tom Almy's Super Startrek Game Page</a><br>
+</html>
