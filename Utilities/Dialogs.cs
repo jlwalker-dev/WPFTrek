@@ -60,7 +60,7 @@ namespace WPFTrek.Utilities
 
             if(ibForm.ShowDialog()==DialogResult.OK)
             {
-                // Cancel was not hit, so return the value of the textbox
+                // Cancel was not hit, so return the value of the text box
                 result = ibTextBox.Text.TrimEnd();
             }
             
@@ -181,11 +181,11 @@ namespace WPFTrek.Utilities
 
                 if (title.Equals("warp", StringComparison.OrdinalIgnoreCase))
                 {
-                    crew = "Mr. Sule said, 'Captain, I did not understand your command.'\n\n";
+                    crew = "Mr. Sulu said, 'Captain, I did not understand your command.'\n\n";
                 }
                 else
                 {
-                    crew = "Mr. Spock raised an eyebrow and said 'Captian, I did not understand your last command'\n\n";
+                    crew = "Mr. Spock raised an eyebrow and said 'Captain, I did not understand your last command'\n\n";
                 }
             }
 

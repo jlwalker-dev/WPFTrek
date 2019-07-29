@@ -83,7 +83,6 @@
     <Compile Include="Utilities\Dice.cs" />
     <Compile Include="Utilities\GameEnd.cs" />
     <Compile Include="Utilities\Dialogs.cs" />
-    <Compile Include="Utilities\Instructions.cs" />
     <Compile Include="Utilities\WriteToLog.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

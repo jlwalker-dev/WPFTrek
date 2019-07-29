@@ -12,3 +12,17 @@ C:\Users\jlw61\source\repos\WPFTrek\obj\Debug\WPFTrek.csproj.GenerateResource.ca
 C:\Users\jlw61\source\repos\WPFTrek\obj\Debug\WPFTrek.csproj.CoreCompileInputs.cache
 C:\Users\jlw61\source\repos\WPFTrek\obj\Debug\WPFTrek.exe
 C:\Users\jlw61\source\repos\WPFTrek\obj\Debug\WPFTrek.pdb
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek.csprojAssemblyReference.cache
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\MainWindow.g.cs
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\App.g.cs
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek_MarkupCompile.cache
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek_MarkupCompile.lref
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek.exe
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek.pdb
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\bin\Debug\WPFTrek.exe
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\bin\Debug\WPFTrek.pdb
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\MainWindow.baml
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek.g.resources
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek.Properties.Resources.resources
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek.csproj.GenerateResource.cache
+C:\Users\jlw61\Source\Repos\jlwalker-dev\WPFTrek\obj\Debug\WPFTrek.csproj.CoreCompileInputs.cache
